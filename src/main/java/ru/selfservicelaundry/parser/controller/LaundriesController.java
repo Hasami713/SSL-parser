@@ -1,4 +1,4 @@
-package ru.selfservicelaundry.parser.api;
+package ru.selfservicelaundry.parser.controller;
 
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -11,7 +11,7 @@ import ru.selfservicelaundry.parser.service.LaundriesService;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/v1/laundries")
-public class LaundriesApi {
+public class LaundriesController {
 
     private final LaundriesService laundriesService;
 

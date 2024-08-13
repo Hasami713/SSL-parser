@@ -1,4 +1,4 @@
-package ru.selfservicelaundry.parser.api;
+package ru.selfservicelaundry.parser.controller;
 
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -14,7 +14,7 @@ import ru.selfservicelaundry.parser.service.LaundryService;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/v1/laundry")
-public class LaundryApi {
+public class LaundryController {
 
     private final LaundryService laundryService;
 
@@ -24,7 +24,7 @@ public class LaundryApi {
     }
 
     @GetMapping("{laundryId}/check")
-    public boolean checkAvailable(@PathVariable String laundryId, @RequestParam String slotId) {
+    public Boolean checkAvailable(@PathVariable String laundryId, @RequestParam String slotId) {
         return laundryService.checkAvailable(laundryId, slotId);
     }
 
