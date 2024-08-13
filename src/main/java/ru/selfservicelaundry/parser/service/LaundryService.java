@@ -1,6 +1,8 @@
 package ru.selfservicelaundry.parser.service;
 
 import java.util.List;
+
+import ru.selfservicelaundry.parser.model.AvailableSlots;
 import ru.selfservicelaundry.parser.model.Laundry;
 import ru.selfservicelaundry.parser.model.Slot;
 

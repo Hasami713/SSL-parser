@@ -33,6 +33,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<version>3.3.2</version>
 		</dependency>
 
 		<dependency>
@@ -58,6 +59,12 @@
 			<groupId>com.github.ben-manes.caffeine</groupId>
 			<artifactId>caffeine</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jsr166-mirror</groupId>
+			<artifactId>jsr166</artifactId>
+			<version>1.7.0</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>

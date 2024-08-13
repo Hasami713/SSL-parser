@@ -1,13 +1,15 @@
 package ru.selfservicelaundry.parser.service.impl;
 
-import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import ru.selfservicelaundry.parser.model.AvailableSlots;
 import ru.selfservicelaundry.parser.model.Laundry;
 import ru.selfservicelaundry.parser.model.Slot;
 
 import ru.selfservicelaundry.parser.service.parser.LaundryParserService;
 import ru.selfservicelaundry.parser.service.LaundryService;
+
+import java.util.List;
 
 @Service
 @RequiredArgsConstructor
